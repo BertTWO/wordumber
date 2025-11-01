@@ -1,17 +1,14 @@
 # Instructions
 
-1. Open **WORDUMBER**.
-2. Run **Wordumber.exe**.
-3. Enter your word in the input box.
-4. Select your typing mode:
-   - **Genius Mode** – Faster and types the long words (use if you want to show of dumbass)
-   - **Simple Mode** – Slower and types the short words (recommended if its end game)
-5. (Optional) Check **Humanize** to enable human-like typing:
-   - Adds realistic delays and occasional mistakes
-   - Recommended interval: **0.00001** for faster typing
-   - Use **0.001** or higher for longer words and “struggling” behavior
-   - If you dont use **Humanize** then you will get caught
-6. After entering the word, press **Enter** or click **Search**  
-   (Pressing Enter is recommended — it only types when it’s your turn.)
+1. Open **Wordumber.exe**.
+2. Enter a word.
+3. Choose a typing mode:
+   - **Genius Mode** – Fast typing for long words
+   - **Simple Mode** – Safer choice for late game
+4. (Optional) Enable **Humanize**:
+   - More realistic delays & mistakes
+   - Recommended interval: **0.00001** (fast) or **0.001** (long words)
+   - Helps avoid detection
+5. Click inside WordBomb chat, then press **Enter** or hit **Search**.
 
-**Tip:** Keep your settings realistic for safer, human-like behavior.
+**Tip:** Use Humanize for safer, human-like typing.
