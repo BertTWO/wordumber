@@ -5,7 +5,7 @@ a = Analysis(
     ['wordumber.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('words', 'words')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

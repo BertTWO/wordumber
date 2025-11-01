@@ -5,8 +5,9 @@ import time
 import tkinter as tk
 from tkinter import ttk
 from pathlib import Path
-
+import sys
 class WordBomber:
+    
     def __init__(self, root):
         self.root = root
         self.root.title("WorDumb (Makes you dumb for using this shit.)")
@@ -16,6 +17,9 @@ class WordBomber:
         self.used_words = []
 
         self.build_ui()
+
+
+    
 
     def build_ui(self):
         main_frame = ttk.Frame(self.root, padding=10)
@@ -92,6 +96,7 @@ class WordBomber:
                     keyboard.press_and_release('backspace')
                     time.sleep(random.uniform(0.04, 0.09))
 
+
             delay = base_delay
             if self.humanize_var.get():
                 delay += random.uniform(0.01, max_human)
@@ -103,14 +108,18 @@ class WordBomber:
 
         keyboard.press_and_release('enter')
         time.sleep(0.05)
+        
+    def resource_path(rel_path):
+        if getattr(sys, '_MEIPASS', None):
+            return Path(sys._MEIPASS) / rel_path
+        return Path(rel_path)
 
     def on_search(self):
         query = self.entry.get().strip()
         if not query:
             return
-
         
-        files = sorted(Path('words').glob('words*.txt'))
+        files = sorted(WordBomber.resource_path("words").glob('words*.txt'))
 
         selected_word = None
         seen = set() 
